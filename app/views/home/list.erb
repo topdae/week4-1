@@ -1,0 +1,18 @@
+<h1 style="text-align:center;">시간낭비기록</h1>
+
+<hr>
+<h2><% @everypost.each do |b| %></h2>
+<hr>
+
+<br>
+<h4>메일을왜보내: <%= b.email %></h4>
+<h4>그냥전화로해: <%= b.title %></h4>
+<h4>이거보내려고: <%= b.content %></h4>
+<h4>이시간에나를: <%= b.created_at %></h4>
+<a href="/destroy/<%= b.id %>">[삭제]</a>
+
+<hr>
+
+<% end %>
+
+<h1><a href='/'>지겹지도않냐</a></h1>
